@@ -1,0 +1,80 @@
+.double-nav .bendera {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--netral-20, #5a381c);
+}
+.bahasa p,
+.logo p {
+  margin: 0; /* Menghapus margin default pada paragraf */
+  line-height: 30px; /* Menyesuaikan tinggi line-height agar sejajar dengan .bendera */
+}
+
+.double-nav .bahasa {
+  background-color: #ffcda6;
+}
+
+.double-nav .drop {
+  border: 1px solid #f2e3d5;
+  background: linear-gradient(180deg, #ffb880 0%, #cf8e5b 100%);
+  box-shadow: 0px 12px 25px 0px rgba(255, 184, 128, 0.8);
+  color: white;
+}
+
+.double-nav {
+    /* background-color: transparent !important; */
+ background: linear-gradient(
+    269deg,
+    #e2c7b3 14.58%,
+    #fbefe1 38.89%,
+    #e9d8c5 98.79%
+  );
+}
+
+.double-nav .logo {
+  width: 30px;
+  height: 30px;
+  color: #774c29;
+}
+
+.double-nav .kanan {
+  background: #f2e3d5;
+  box-shadow: 3px 3px 6px 0px #e7d6c6, -3px -3px 6px 0px #edd8c7;
+}
+
+.double-nav .button-1 {
+  background: linear-gradient(180deg, #ffb880 0%, #cf8e5b 100%);
+  box-shadow: 0px 12px 25px 0px rgba(255, 184, 128, 0.8);
+  color: #3d342d;
+}
+
+.double-nav .button-2 {
+  border: 2px solid var(--primary-60, #cf8e5b);
+  color: #3d342d;
+}
+
+/* Tambahkan CSS sesuai kebutuhan */
+.navbar-2 .nav-link.active {
+    color: #B27748 !important;
+    background-color: transparent !important;
+    border: 0px !important;
+    border-bottom: 4px solid var(--primary-70, #B27748) !important;
+    font-weight: bold;
+  }
+
+  .navbar-2 .nav-link {
+    color: #B27748;
+    border: 0 !important;
+  }
+  
+  .logo-mobile {
+    width: 30px;
+  }
+
+  .double-nav .input-search {
+    outline: 0;
+  }
+  .double-nav .search {
+    border: 1px solid #CF8E5B;
+  }

@@ -1,0 +1,44 @@
+.title {
+    color: #956138;
+}
+
+.testi-section .card-container {
+    border-radius: 8px;
+  background: #f2e3d5;
+  box-shadow: 6px 6px 12px 0px #e7d6c6,
+    -6px -6px 12px 0px rgba(248, 246, 245, 0.6);
+}
+
+.testi-section .product-name {
+    color: #774C29;
+}
+
+.testi-section .customer-name {
+    color: #CF8E5B;
+}
+
+.testi-section .second-description {
+    color: #5A381C;
+    line-height: 140%;
+}
+
+.testi {
+    background-color: #F2E3D5;
+}
+
+.testi .button-container {
+    background: var(--primary-30, #FFCDA6);
+box-shadow: 0px 1.091px 0px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.testi .panah.active {
+    border: 1px solid #F2E3D5;
+background: linear-gradient(180deg, #FFB880 0%, #CF8E5B 100%);
+box-shadow: 0px 12px 25px 0px rgba(255, 184, 128, 0.80);
+}
+
+.testi .indicator-symbol-active {
+    /* border: 1px solid #F2E3D5;
+    background-color: linear-gradient(180deg, #FFB880 0%, #CF8E5B 100%);
+    box-shadow: 0px 12px 25px 0px rgba(255, 184, 128, 0.80); */
+  }
