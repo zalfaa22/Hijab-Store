@@ -1,9 +1,9 @@
 import React from "react";
-
+import './css/daftar.css'
 export default function Daftar() {
   return (
     <>
-      <div className="badan">
+      <div className="badan px-0 px-md-5 px-lg-0">
         {/* Name */}
         <div className="email mb-4 px-4 py-2 d-flex justify-content-start border-1 w-100 border-0 rounded-3">
           <img src="../assets/login/profile.svg" alt="" className="me-3" />
@@ -40,19 +40,20 @@ export default function Daftar() {
         {/* Remember me */}
         <div className="w-100 mb-4 d-flex justify-content-between align-items-center">
           <label className="d-flex align-items-center">
-            <input type="checkbox" className="check me-2" />
-            Remember me
+            <input type="checkbox" className="text-nowrap check me-2" />
+            <p className="mb-0"> Remember me</p>
           </label>
-          <div className="">Forget password</div>
+          <p className="forget text-nowrap mb-0">Forget password</p>
         </div>
 
         {/* Login button */}
-        <button className="login-button mb-4 w-100 py-2 border-0">
-          Sign up
-        </button>
+        <a href="/" >
+        <button type="submit" className="login-button mb-4 w-100 py-2 border-0">
+        Sign up
+        </button></a>
 
         {/* Strip */}
-        <div className="w-100 mb-4 d-flex justify-content-between">
+        <div className="login-with w-100 mb-4 d-flex justify-content-between">
           <img src="../assets/login/kanan.svg" alt="" />
           Login with
           <img src="../assets/login/kanan.svg" alt="" />
