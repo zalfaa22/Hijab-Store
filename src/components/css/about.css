@@ -1,0 +1,27 @@
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-container p {
+    color: #402222;
+}
+
+.about-section button {
+    background: linear-gradient(180deg, #FFB880 0%, #CF8E5B 100%);
+box-shadow: 0px 12px 25px 0px rgba(255, 184, 128, 0.80);
+color: white;
+border-radius: 0;
+}
+
+.about-section h1 {
+    color: #956138;
+}
+
+.about-section {
+    background-color: #F2E3D5;
+}
+
+.kanan {
+    text-align: justify;
+}
