@@ -1,0 +1,17 @@
+.gradient {
+    background: linear-gradient(to left, #E2C7B3, #FBEFE1, #E2C7B3);
+}
+.input-box {
+    box-shadow: 2px 2px 20px -10px black;
+}
+
+@media screen and (min-width: 1024px) {
+.input-wrap {
+    position: absolute;
+    right: 5rem;
+}
+.content-position {
+    position: absolute;
+    left: 23rem;
+}
+}
