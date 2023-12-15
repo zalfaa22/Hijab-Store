@@ -163,17 +163,37 @@ img.image2 {
     outline: inherit;
   }
 
-  .color button.active,
+  /* .color button.active,
   .color button:active,
   .color button:focus {
     border: black !important;
+  } */
+
+ 
+
+  .color .buttonimg:focus img {
+    transform: scale(1.25); /* Sesuaikan dengan faktor perbesaran yang diinginkan */
+  }
+  .color .buttonimg.active img {
+    transform: scale(1.25);
   }
 
-  .buttonimg.active,
-  .buttonimg:active,
-  .buttonimg:focus {
-    width: 125%;
-    /* margin-right: 4rem; */
+
+  .images button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  .images .buttonphoto.active img {
+    border: 3px solid black;
+  }
+  .images .buttonphoto:focus img {
+    outline: 3.5px solid #5A381C;
   }
 
   

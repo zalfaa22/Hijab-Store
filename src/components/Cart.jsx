@@ -5,7 +5,11 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Cart() {
     const [qty, setQty] = useState(1);
-    var enlargedImage = document.getElementById('enlarged-image');
+    const [isActive, setIsActive] = useState(true);
+
+    const handleButtonClick = () => {
+      setIsActive(false);
+    };
 
   return (
     <>
@@ -91,15 +95,21 @@ The Best Seller</div>
       <div class="cart">
         <div class="container">
           <div class="row d-flex justify-content-between ">
-            <div class="col-lg-2 col-md-3 col-12 ">
-              <img class="img-fluid mb-3 " src="assets/Cart/image1.png" />
-              <img class="img-fluid mb-3" src="assets/Cart/image1.png" />
-              <img class="img-fluid mb-3" src="assets/Cart/image1.png" />
-              <img class="img-fluid mb-3" src="assets/Cart/image1.png" />
-            </div>
+            <div class="col-lg-2 col-md-3 col-12">
+              <div className="images">
+              <button className={`buttonphoto ${isActive ? 'active' : ''}`} onClick={handleButtonClick}>
+              <img class="img-fluid mb-3 " src="assets/Cart/image1.png" alt="Image 1"/>
+              </button>
+              <button className={`buttonphoto ${isActive ? '' : ''}`} onClick={handleButtonClick}>
+              <img class="img-fluid mb-3" src="assets/Cart/image1.png" alt="Image 2" /></button>
+              <button className={`buttonphoto ${isActive ? '' : ''}`} onClick={handleButtonClick}>
+              <img class="img-fluid mb-3" src="assets/Cart/image1.png" alt="Image 3" /></button>
+              <button className={`buttonphoto ${isActive ? '' : ''}`} onClick={handleButtonClick}>
+              <img class="img-fluid mb-3" src="assets/Cart/image1.png"  alt="Image 4"/></button>
+            </div></div>
             <div class="col-lg-5 col-md-9">
               <img class="img-fluid " src="assets/Cart/image2.png" />
-              <div class="row justify-content-between mt-4">
+              <div class="row justify-content-between mt-5">
 
               {/* <div class="col">
               <button class="img-fluid box-size p-4"></button>
@@ -118,28 +128,28 @@ The Best Seller</div>
               </div> */}
             
 
-                <div class="col color ">
-                  <button className="buttonimg">
-                  <img class="img-fluid " src="assets/cart/color1.svg" />
+                <div class="col color">
+                  <button className={`buttonimg ${isActive ? '' : ''}`} onClick={handleButtonClick}>
+                  <img class="img-fluid " src="assets/cart/color1.svg" alt="Color 1"/>
                   </button>
                 </div>
                 <div class="col color">
-                <button className="buttonimg">
+                <button className={`buttonimg ${isActive ? 'active' : ''}`} onClick={handleButtonClick}>
                   <img class="img-fluid" src="assets/cart/color2.svg" />
                   </button>
                 </div>
                 <div class="col color">
-                <button className="buttonimg">
+                <button className={`buttonimg ${isActive ? '' : ''}`} onClick={handleButtonClick}>
                   <img class="img-fluid" src="assets/cart/color3.svg" />
                   </button>
                 </div>
                 <div class="col color">
-                <button className="buttonimg">
+                <button className={`buttonimg ${isActive ? '' : ''}`} onClick={handleButtonClick}>
                   <img class="img-fluid" src="assets/cart/color4.svg" />
                   </button>
                 </div>
                 <div class="col color">
-                <button className="buttonimg">
+                <button className={`buttonimg ${isActive ? '' : ''}`} onClick={handleButtonClick}>
                   <img class="img-fluid" src="assets/cart/color5.svg" />
                   </button>
                 </div>
