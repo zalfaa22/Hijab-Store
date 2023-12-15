@@ -1,0 +1,199 @@
+/* .row {
+    display: flex;
+    align-items: flex-start;
+} */
+
+.cart {
+    background-image: linear-gradient(to left, #E2C7B3, #FBEFE1, #E2C7B3);
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-top: 48px;
+}
+.btn-plus {
+    border: none;
+    outline: none;
+    background-color: #C5B4A6;
+    color: #292D32;
+    font-size: 1.2rem;
+}
+.btn-plus:hover {
+    color: white;
+    background-color: #a79382;
+}
+.btn-minus {
+    border: none;
+    outline: none;
+    background-color: #E5D8C9;
+    color: #292D32;
+    font-size: 1.2rem;
+}
+.btn-minus:hover {
+    color: white;
+    background-color: #a79382;
+}
+.button-add:hover {
+    opacity: 0.8;
+}
+
+.custom-btn {
+    height: 2.5rem;
+}
+.custom-btn.active,
+.custom-btn:active,
+.custom-btn:focus {
+    background: linear-gradient(to bottom, #FFB880, #CF8E5B);
+  border-color: #dadada !important;
+  
+}
+.bi-arrow {
+  /* Warna panah ketika tombol tidak aktif */
+  color: #ffffff;
+}
+
+.custom-btn.active .bi-arrow,
+.custom-btn:active .bi-arrow,
+.custom-btn:focus .bi-arrow {
+  /* Warna panah ketika tombol aktif */
+  color: #5A381C;
+}
+
+
+/* .toggle-container {
+    position: relative;
+  }
+  
+  .toggle-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .toggle-btn i {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .toggle-btn.active {
+    background-color: #2c3e50; 
+  }
+  
+  .toggle-btn.active i:first-child {
+    transform: translateX(100%);
+  }
+  
+  .toggle-btn.active i:last-child {
+    transform: translateX(-100%);
+  } */
+
+
+@media screen and (min-width: 1024px) {
+    .col-size {
+        margin-right: 13px;
+    }
+}
+
+/* .image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+.image-column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+img.image {
+    margin: 0.8rem;
+    margin-left: 4rem;
+}
+img.image2 {
+    margin: 0.8rem;
+    margin-left: 1.2rem;
+}
+.col {
+    padding-top: 2rem;
+    margin-left: 1.2rem;
+}
+
+.box {
+    padding: 2rem;
+    margin-right: 3.1rem;
+    border: none;
+    outline: none;
+}
+.box-1 {
+    background-color: #CF8E5B;
+}
+.box-2 {
+    background-color: #C67673;
+}
+.box-3 {
+    background-color: #5A3232;
+}
+.box-4 {
+    background-color: #774C29;
+}
+.box-5 {
+    background-color: #CF8E5B;
+}
+.box:hover {
+    padding: 2.5rem;
+}
+
+
+.btn-price {
+    border-width: 4px;
+    border: gray;
+}
+
+.box-size {
+    padding: 2rem;
+    margin-right: 1.7rem;
+} */
+
+.color button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  /* .color button.active,
+  .color button:active,
+  .color button:focus {
+    border: black !important;
+  } */
+
+ 
+
+  .color .buttonimg:focus img {
+    transform: scale(1.25); /* Sesuaikan dengan faktor perbesaran yang diinginkan */
+  }
+  .color .buttonimg.active img {
+    transform: scale(1.25);
+  }
+
+
+  .images button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  .images .buttonphoto.active img {
+    border: 3px solid black;
+  }
+  .images .buttonphoto:focus img {
+    outline: 3.5px solid #5A381C;
+  }
+
+  

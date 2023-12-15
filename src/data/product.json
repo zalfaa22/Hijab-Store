@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "image": "assets/CardProduct/image.png",
+        "category": "Produk Terbaru",
+        "name": "Bainar Multicolour Dress",
+        "price": "Rp 195.000"
+    },
+    {
+        "id": 2,
+        "image": "assets/CardProduct/image.png",
+        "category": "produk terbaru",
+        "name": "Bainar Multicolour Dress",
+        "price": "Rp 195.000"
+    },
+    {
+        "id": 3,
+        "image": "assets/CardProduct/image.png",
+        "category": "produk terbaru",
+        "name": "Bainar Multicolour Dress",
+        "price": "Rp 195.000"
+    },
+    {
+        "id": 4,
+        "image": "assets/CardProduct/image.png",
+        "category": "produk terbaru",
+        "name": "Bainar Multicolour Dress",
+        "price": "Rp 195.000"
+    }
+]
