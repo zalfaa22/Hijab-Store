@@ -49,7 +49,7 @@ const TestimonialCarousel = () => {
   const itemsPerSlide = windowWidth < 576 ? 1 : 3;
 
   return (
-    <div className="testi w-100 min-vh-100 pt-5">
+    <div className="testi w-100 pt-5">
     <h1 className="px-4 title text-uppercase fw-bold fs-1">
       LET CUSTOMER SPEAK FOR US
     </h1>
@@ -75,7 +75,7 @@ const TestimonialCarousel = () => {
         </Carousel.Item>
       ))}
     </Carousel>
-    <div className="pt-5">
+    <div className="pt-1">
         <div className="btn px-2 rounded-5" style={{ backgroundColor: "#FFCDA6" }}>
         <button
               class="btn  custom-btn rounded-circle"
