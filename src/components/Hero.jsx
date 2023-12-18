@@ -27,8 +27,7 @@ export default function hero() {
           <Button className="border-0 px-5 py-3 fw-bold">Shop now</Button>
         </div>
 
-        
-        <div className="side-love">
+        <div className="side-love" data-aos="fade-up" data-aos-duration="3000">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="68"
@@ -53,7 +52,11 @@ export default function hero() {
           <img src="../assets/hero/heart.svg" alt="" className="love " />
         </div>
 
-        <div className="side-ticket">
+        <div
+          className="side-ticket"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="68"
@@ -73,7 +76,11 @@ export default function hero() {
         </div>
 
         {/* Love dan ticket Mobile */}
-        <div className="fitur-mobile d-md-none">
+        <div
+          className="fitur-mobile d-md-none"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           {/* Love */}
           <div className="fitur-container p-3 rounded-circle mb-3">
             <img src="../assets/hero/heart.svg" alt="" />

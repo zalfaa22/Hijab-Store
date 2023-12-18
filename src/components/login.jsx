@@ -3,7 +3,6 @@ import React from "react";
 export default function Login() {
   return (
     <>
-      
       <div className="badan px-0 px-md-5 px-lg-0">
         <div className="email mb-4 px-4 py-2 d-flex justify-content-start border-1 w-100 border-0 rounded-3">
           <img src="../assets/login/gmail.svg" alt="" className="me-3" />

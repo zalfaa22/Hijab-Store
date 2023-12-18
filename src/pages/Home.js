@@ -10,10 +10,8 @@ import Carousel from "../components/Carousel";
 export default function Home() {
   return (
     <>
-      <section id="hero" className="">
         <Navbar />
         <Hero />
-      </section>
       <div
         style={{
           backgroundColor: "#F2E3D5",

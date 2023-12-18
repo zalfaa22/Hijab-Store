@@ -16,6 +16,8 @@
 
 .masuk {
   background: linear-gradient(to right, #e2c7b3, #fbefe1, #e9d8c5);
+  /* overflow: hidden; */
+  /* max-height: 100vh; */
 }
 
 /* Hapus gaya default dari checkbox */
@@ -64,30 +66,62 @@ input[type="checkbox"]:checked::before {
   border: 2px solid var(--netral-20, #808080);
 }
 
+.login-page .badan .akun input::placeholder {
+  font-size: 14px;
+}
+
 /* SMALL */
 @media (min-width: 319px) {
-    .login-page {
-        padding: 0 20px;
+  /* .login-page {
+      padding: 0 10px;
+  } */
+  .orang {
+      /* margin: 0 -64px 0 0; */
     }
-    .orang {
-        margin: 0 -64px 0 0;
-      }
 
-    .badan .eye {
-        margin: 0 0 0 -10px;
-    }
+  .badan .eye {
+      margin: 0 0 0 -10px;
+  }
+
+  .rememberme p {
+    font-size: 12px;
+  }
+
+  .login-page .login {
+    padding: 0 20px;
+  }
 }
 
 /* MEDIUM */
 @media (min-width: 767px) {
-    .orang {
-        margin: 0 -72px 0 0;
-      }
+  .orang {
+      margin: 0 -72px 0 0;
+    }
+
+    .login-page .login {
+      padding: 0 100px;
+    }
 }
 
 /* LAPTOP */
 @media (min-width: 1024px) {
-  .orang {
-    margin: 0 -88px 0 0;
-  }
+.orang {
+  margin: 34px 0 0 32px;
 }
+.orang-signup {
+  margin: 0 0 0 32px;
+}
+
+.login-page .login {
+  padding: 0 40px;
+}
+}
+
+/* LAPTOP L*/
+@media (min-width: 1440px) {
+.orang {
+  width: 500px;
+  margin:0 -280px 0 0;
+}
+}
+

@@ -6,6 +6,13 @@ import About from "./About";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const [activePage, setActivePage] = useState('/home');
+
+  useEffect(() => {
+    const path = window.location.pathname;
+    setActivePage(path);
+  }, []);
+
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const handleToggleClick = () => {
@@ -22,6 +29,7 @@ export default function Header() {
           background: "#fafafa",
           padding: "10px",
           width: "200px",
+          zIndex: "1000",
         }}
       >
         <Nav.Item className="my-3">
@@ -162,7 +170,7 @@ export default function Header() {
           className="d-none d-lg-flex navbar-2 d-flex position-relative justify-content-center mx-5 mt-3"
         >
           <Nav.Item className="">
-            <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link href="#hero">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             {/* <Link to="#about">About us</Link> */}
