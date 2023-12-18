@@ -89,19 +89,19 @@ export default function Cart() {
                 data-aos-duration="1500"
               >
                 <div class="col-2 col-size">
-                  <img class="img-fluid" src="assets/cart/size1.svg" />
+                  <img class="img-fluid" src="assets/Cart/size1.svg" />
                 </div>
                 <div class="col-2 col-size">
-                  <img class="img-fluid" src="assets/cart/size2.svg" />
+                  <img class="img-fluid" src="assets/Cart/size2.svg" />
                 </div>
                 <div class="col-2 col-size">
-                  <img class="img-fluid" src="assets/cart/size3.svg" />
+                  <img class="img-fluid" src="assets/Cart/size3.svg" />
                 </div>
                 <div class="col-2 col-size">
-                  <img class="img-fluid" src="assets/cart/size4.svg" />
+                  <img class="img-fluid" src="assets/Cart/size4.svg" />
                 </div>
                 <div class="col-2 col-size">
-                  <img class="img-fluid" src="assets/cart/size5.svg" />
+                  <img class="img-fluid" src="assets/Cart/size5.svg" />
                 </div>
               </div>
               <h6 className="pt-4" style={{ color: "#774C29" }}>
