@@ -3,22 +3,36 @@ import "./css/about.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
 export default function about() {
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//         console.log(entry)
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add('show');
+//         } else {
+//             entry.target.classList.remove('show');
+//         }
+//     })
+// })
+
+// const hiddenElements = document.querySelectorAll('.hidden');
+// hiddenElements.forEach((el) => observer.observe(el));
   return (
     <>
       <div className="about-section py-5 w-100 min-vh-100 ">
         <h1 className="fs-1 fw-bold text-uppercase">About Us</h1>
-        <Container className="mt-5">
+        <Container className="mt-5 px-5 px-md-3 px-lg-5">
           <Row>
-            <Col className="col-12 col-md-4 col-lg-6 px-5 px-md-0 px-lg-2">
-              <Row className="d-flex align-items-stretch">
-                <Col className="foto-besar p-0 me-4">
+            <Col className="col-12 col-md-5 col-lg-6 px-0 m-0" data-aos="zoom-in"  data-aos-duration="2000">
+              <Row className="d-flex w-100 justify-content-between p-0 m-0">
+                <Col className="foto-besar p-0 m-0 w-100 mx-auto">
                   <img
                     src="../assets/about/besar.svg"
                     alt=""
                     className="img-fluid h-100"
                   />
                 </Col>
-                <Col className="foto-kecil p-0 d-flex flex-column justify-content-between">
+
+                <Col className="foto-kecil p-0 ms-2 d-flex flex-column justify-content-between w-100 mx-auto">
                   <img
                     src="../assets/about/kecil-1.svg"
                     alt=""
@@ -32,7 +46,7 @@ export default function about() {
                 </Col>
               </Row>
             </Col>
-            <Col className="kanan col-12 col-md-8 col-lg-6 px-5 px-lg-2 mt-4 mt-lg-0">
+            <Col className="kanan col-12 col-md-7 col-lg-6 px-0 ps-md-4 m-0 mt-4 mt-md-0" data-aos="fade-left"  data-aos-duration="2000">
               <div className="logo-container d-flex ps-lg-4 justify-content-center justify-content-md-start align-items-center">
                 <img
                   src="./assets/logo.svg"
@@ -41,22 +55,22 @@ export default function about() {
                 />
                 <p className="fs-3 mb-0">zada kheir</p>
               </div>
-              <p className="text-md-start fs-6 mt-3 ps-lg-4">
+              <p className="text-md-start mt-3 ps-lg-4">
                 Tidak hanya dibuat untuk menutupi kita. Kami memakainya untuk
                 menunjukkan bagaimana perasaan kami, siapa kami sebagai pribadi.
                 Untuk mengekspresikan nilai-nilai batin kita.
               </p>
-              <p className="text-md-start fs-6 ps-lg-4">
+              <p className="text-md-start ps-lg-4">
                 Bagi para muslimah di Indonesia, menemukan gaya yang pas bisa
                 membuat frustasi, padahal yang kita inginkan hanyalah nyaman dan
                 percaya diri.
               </p>
-              <p className="text-md-start fs-6 ps-lg-4">
+              <p className="text-md-start ps-lg-4">
                 Kami ingin Anda menunjukkan selera gaya Anda, identitas asli
                 Anda. Zada Kheir lebih dari sekedar merek, ini adalah surat
                 cinta kami untuk kalian semua yang berjiwa chic.
               </p>
-              <Button className="d-flex ms-lg-4 justify-content-center mx-auto mx-md-0 justify-content-md-start border-0 px-5 py-3 mt-5 mt-md-4 mt-lg-3">
+              <Button className="d-flex ms-lg-4 justify-content-center mx-auto mx-md-0 justify-content-md-start border-0 p-2 px-lg-5 py-lg-3 mt-4 mt-md-2 mt-lg-3">
                 Read More
               </Button>
             </Col>

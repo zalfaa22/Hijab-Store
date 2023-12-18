@@ -8,36 +8,46 @@ import About from "../components/About";
 import Testi from "../components/Testi";
 import Carousel from "../components/Carousel";
 import { Row, Col } from "react-bootstrap";
+import Grisel from "../components/grisel";
 
 export default function Home() {
   return (
-    <Navbar />
-    {/* Hero Section/ Start */}
-      <Hero />
-    <div
-      style={{
-        backgroundColor: "#F2E3D5",
-        paddingTop: "3rem",
-      }}
-    >
-      
-      <CardProduct />
-      
-      {/* About us Start */}
-      <section id="about" className="">
-      <About />
+    <>
+      <Navbar />
+      {/* <div
+        style={{
+          backgroundColor: "#F2E3D5",
+          paddingTop: "3rem",
+        }}
+      > */}
+      {/* Hero Section/ Start */}
+      <section>
+        <Hero />
       </section>
 
-      <div style={{marginBottom: "12rem"}}>
-      <Cart/></div>
+     
+        <CardProduct />
 
-      <section className="">
-        <Carousel />
-      </section>
+        {/* About us Start */}
+        <section id="about" className="">
+          <About />
+        </section>
 
-      <div style={{marginBottom: "12rem"}}>
-      </div>
-      <Footer/>
-    </div>
+        {/* <section className="mt-5 pt-5">
+          <Grisel />
+        </section> */}
+
+        <section style={{ marginBottom: "12rem" }}>
+          <Cart />
+        </section>
+
+        <section className="">
+          <Carousel />
+        </section>
+
+        <section style={{ marginBottom: "12rem" }}></section>
+        <Footer />
+      {/* </div> */}
+    </>
   );
 }
