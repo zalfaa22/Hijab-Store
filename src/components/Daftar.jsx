@@ -1,5 +1,5 @@
 import React from "react";
-import './css/daftar.css'
+// import './css/daftar.css'
 export default function Daftar() {
   return (
     <>
@@ -55,7 +55,7 @@ export default function Daftar() {
         {/* Strip */}
         <div className="login-with w-100 mb-4 d-flex justify-content-between">
           <img src="../assets/login/kanan.svg" alt="" />
-          Login with
+          <p className="m-0 fw-semibold">Login with</p>
           <img src="../assets/login/kanan.svg" alt="" />
         </div>
 

@@ -1,3 +1,12 @@
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}
+
 .logo {
     width: 40px;
     height: 40px;
@@ -24,4 +33,38 @@ border-radius: 0;
 
 .kanan {
     text-align: justify;
+}
+
+/* SMALL */
+@media (min-width: 319px) {
+    .about-section .kanan p {
+        font-size: 10px;
+    }
+    .about-section .kanan button {
+        font-size: 10px;
+    }
+}
+
+/* MEDIUM */
+@media (min-width: 767px) {
+    .about-section .kanan {
+        margin: 0;
+    }
+
+    .about-section .kanan p {
+        font-size: 12px;
+    }
+    .about-section .kanan button {
+        font-size: 12px;
+    }
+}
+
+/* LAPTOP */
+@media (min-width: 1024px) {
+    .about-section .kanan p {
+        font-size: 15px;
+    }
+    .about-section .kanan button {
+        font-size: 13px;
+    }
 }

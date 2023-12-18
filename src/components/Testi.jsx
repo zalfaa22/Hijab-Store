@@ -4,12 +4,8 @@ import "./css/testi.css";
 const Testi = ({ title, stars, customerName, materialDescription, photo }) => {
   return (
     <>
-        {/* <div className="container-fluid">
-      <div className="row">
-          <div className="col-12"> */}
-            
-        
-      <div className="testi-section">
+      <div className="testi-section" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
     <div className="card-container p-3 mt-5 mt-md-0">
       <div className="photo-container">
         <img src={photo} alt="" className="w-100 img-fluid" />

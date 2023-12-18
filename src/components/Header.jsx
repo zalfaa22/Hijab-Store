@@ -6,6 +6,13 @@ import About from "./About";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const [activePage, setActivePage] = useState('/home');
+
+  useEffect(() => {
+    const path = window.location.pathname;
+    setActivePage(path);
+  }, []);
+
   const [isNavOpen, setIsNavOpen] = useState(false);
   const handleToggleClick = () => {
     setIsNavOpen(!isNavOpen);
@@ -21,6 +28,7 @@ export default function Header() {
           background: "#fafafa",
           padding: "10px",
           width: "200px",
+          zIndex: "1000",
         }}
       >
         <Nav.Item className="my-3">
@@ -40,10 +48,10 @@ export default function Header() {
           <Nav.Link href="#about">Categories</Nav.Link>
         </Nav.Item>
         <Nav.Item className="my-3">
-          <Button className="button-1 border-0">Login</Button>
+          <Button href="/" className="button-1 border-0">Login</Button>
         </Nav.Item>
         <Nav.Item className="my-3">
-          <Button className="button-2 bg-transparent rounded-0">Sign up</Button>
+          <Button href="/daftar" className="button-2 bg-transparent rounded-0">Sign up</Button>
         </Nav.Item>
       </div>
     </>
@@ -112,8 +120,8 @@ export default function Header() {
               </div>
             </Nav.Item>
             <div className="d-none d-lg-flex">
-              <Button className="button-1 border-0 me-3">Login</Button>
-              <Button className="button-2 bg-transparent rounded-0 ">
+              <Button href="/" className="button-1 border-0 me-3">Login</Button>
+              <Button href="/daftar" className="button-2 bg-transparent rounded-0 ">
                 Sign up
               </Button>
             </div>
@@ -161,7 +169,7 @@ export default function Header() {
           className="d-none d-lg-flex navbar-2 d-flex position-relative justify-content-center mx-5 mt-3"
         >
           <Nav.Item className="">
-            <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link href="#hero">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             {/* <Link to="#about">About us</Link> */}
