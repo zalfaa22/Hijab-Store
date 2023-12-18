@@ -7,6 +7,7 @@
 }
 
 .hero-section h1 {
+    font-size: 3.4rem;
     color: #774C29;
 }
 
@@ -25,7 +26,6 @@ box-shadow: 0px 12px 25px 0px rgba(255, 184, 128, 0.80);
   .side-ticket svg,
   .side-love svg {
     display: none;
-    color: 
   }
   .tulisan-vertikal {
   display: none;

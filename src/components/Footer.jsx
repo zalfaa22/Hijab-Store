@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <div
-        className="text-center fs-1 mb-4 fw-normal"
+        className="text-center fs-1 mb-4 fw-normal pt-5"
         style={{ color: "#956138", marginTop: "3rem" }}
       >
         Support Zada Kheir

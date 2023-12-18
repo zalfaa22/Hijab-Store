@@ -6,7 +6,7 @@ import { Container, Row, Col, Card, Nav, Button } from "react-bootstrap";
 export default function login() {
   return (
     <>
-      <header className="login-page masuk w-100 min-vh-100 d-flex align-items-center">
+      <header className="login-page masuk w-100 min-vh-100 d-flex align-items-center pt-5">
         <Container className="">
           <Row className="">
             <Col className="login col-12 col-lg-6 m-0 mx-md-0">
