@@ -15,7 +15,7 @@ export default function Color() {
           className={`buttonimg ${isActive ? "" : ""}`}
           onClick={handleColorClick}
         >
-          <img class="img-fluid " src="assets/cart/color1.svg" alt="Color 1" />
+          <img class="img-fluid " src="assets/Cart/color1.svg" alt="Color 1" />
         </button>
       </div>
       <div
@@ -28,7 +28,7 @@ export default function Color() {
           className={`buttonimg ${isActive ? "active" : ""}`}
           onClick={handleColorClick}
         >
-          <img class="img-fluid" src="assets/cart/color2.svg" />
+          <img class="img-fluid" src="assets/Cart/color2.svg" />
         </button>
       </div>
       <div
@@ -41,7 +41,7 @@ export default function Color() {
           className={`buttonimg ${isActive ? "" : ""}`}
           onClick={handleColorClick}
         >
-          <img class="img-fluid" src="assets/cart/color3.svg" />
+          <img class="img-fluid" src="assets/Cart/color3.svg" />
         </button>
       </div>
       <div
@@ -54,7 +54,7 @@ export default function Color() {
           className={`buttonimg ${isActive ? "" : ""}`}
           onClick={handleColorClick}
         >
-          <img class="img-fluid" src="assets/cart/color4.svg" />
+          <img class="img-fluid" src="assets/Cart/color4.svg" />
         </button>
       </div>
       <div
@@ -67,7 +67,7 @@ export default function Color() {
           className={`buttonimg ${isActive ? "" : ""}`}
           onClick={handleColorClick}
         >
-          <img class="img-fluid" src="assets/cart/color5.svg" />
+          <img class="img-fluid" src="assets/Cart/color5.svg" />
         </button>
       </div>
     </>
