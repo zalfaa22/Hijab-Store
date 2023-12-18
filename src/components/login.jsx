@@ -38,7 +38,7 @@ export default function Login() {
         </div>
 
         {/* Login button */}
-        <a href="/Home" >
+        <a href="/home" >
         <button type="submit" className="login-button mb-4 w-100 py-2 border-0">
         Login
         </button></a>

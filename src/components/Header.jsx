@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+
   const handleToggleClick = () => {
     setIsNavOpen(!isNavOpen);
   };
@@ -24,7 +25,7 @@ export default function Header() {
         }}
       >
         <Nav.Item className="my-3">
-          <Nav.Link href="/home">Home</Nav.Link>
+          <Nav.Link href="/home" >Home</Nav.Link>
         </Nav.Item>
         <Nav.Item className="my-3">
           {/* <Link to="../home#about">About Us</Link> */}
@@ -40,10 +41,10 @@ export default function Header() {
           <Nav.Link href="#about">Categories</Nav.Link>
         </Nav.Item>
         <Nav.Item className="my-3">
-          <Button className="button-1 border-0">Login</Button>
+          <Button href="/" className="button-1 border-0">Login</Button>
         </Nav.Item>
         <Nav.Item className="my-3">
-          <Button className="button-2 bg-transparent rounded-0">Sign up</Button>
+          <Button href="/daftar" className="button-2 bg-transparent rounded-0">Sign up</Button>
         </Nav.Item>
       </div>
     </>
@@ -112,8 +113,8 @@ export default function Header() {
               </div>
             </Nav.Item>
             <div className="d-none d-lg-flex">
-              <Button className="button-1 border-0 me-3">Login</Button>
-              <Button className="button-2 bg-transparent rounded-0 ">
+              <Button href="/" className="button-1 border-0 me-3">Login</Button>
+              <Button href="/daftar" className="button-2 bg-transparent rounded-0 ">
                 Sign up
               </Button>
             </div>
@@ -157,7 +158,7 @@ export default function Header() {
 
         <Nav
           variant="tabs"
-          defaultActiveKey="/"
+          defaultActiveKey="/home"
           className="d-none d-lg-flex navbar-2 d-flex position-relative justify-content-center mx-5 mt-3"
         >
           <Nav.Item className="">
@@ -168,7 +169,7 @@ export default function Header() {
             <Nav.Link href="#about">About us</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-2">New in</Nav.Link>
+            <Nav.Link href="#product">New in</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="link-3">All Product</Nav.Link>
