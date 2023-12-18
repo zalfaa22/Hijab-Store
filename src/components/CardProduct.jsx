@@ -16,7 +16,7 @@ export default function CardProduct() {
         <div className="tittle fs-1 fw-semibold pb-3">Zada Kheir Product</div>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-5">
         {jsonData.map((item, index) => (
-          <div key={index} className="group">
+          <div key={index} className="group" data-aos="zoom-in" data-aos-duration="1000">
             <div className="col">
               <div className="custom-card rounded-3  ">
                 <img
@@ -40,13 +40,6 @@ export default function CardProduct() {
                     </button>
                     <button class="button  p-2 ms-3 rounded-3" style={{width: "40px", height: "40px"}}></button>
                   </div>
-
-                  {/* <div class=" row text-center justify-content-center">
-    <div class=" bg-danger-subtle  shadow col-7 py-2 d-flex justify-content-center align-items-start me-4">Add to cart
-        <p class="text-dark fs-6 fw-bold  ">Add to Cart</p>
-    </div>
-    <div class="bg-danger-subtle rounded-3 shadow col-2"></div>
-</div> */}
                 </div>
               </div>
             </div>
