@@ -8,18 +8,17 @@ import About from "../components/About";
 import Testi from "../components/Testi";
 import Carousel from "../components/Carousel";
 import { Row, Col } from "react-bootstrap";
-import Grisel from "../components/grisel";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      {/* <div
+      <div
         style={{
           backgroundColor: "#F2E3D5",
           paddingTop: "3rem",
         }}
-      > */}
+      >
       {/* Hero Section/ Start */}
       <section>
         <Hero />
@@ -33,10 +32,6 @@ export default function Home() {
           <About />
         </section>
 
-        {/* <section className="mt-5 pt-5">
-          <Grisel />
-        </section> */}
-
         <section style={{ marginBottom: "12rem" }}>
           <Cart />
         </section>
@@ -47,7 +42,7 @@ export default function Home() {
 
         <section style={{ marginBottom: "12rem" }}></section>
         <Footer />
-      {/* </div> */}
+      </div>
     </>
   );
 }
