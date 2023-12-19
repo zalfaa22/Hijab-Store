@@ -1,0 +1,25 @@
+/* .size { */
+    /* width: 12px;
+    height: 12px;
+    column-width: 20px; */
+    /* grid-column: 12px; */
+    /* display: grid; */
+/* } */
+
+.box {
+    outline-width: 2px;
+    outline-color: #774C29 !important;
+}
+
+.bg-custom {
+    background: linear-gradient(to bottom, #FFB880, #CF8E5B);
+}
+
+.border-custom {
+    outline: #774C29 !important;
+}
+
+.custom-color {
+    border-color: linear-gradient(to bottom,#FFB880, #CF8E5B);
+    color: #ebebeb;
+}
