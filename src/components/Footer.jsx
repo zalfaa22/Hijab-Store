@@ -58,7 +58,7 @@ export default function Footer() {
                 className="form-control"
                 id="textInput"
                 placeholder="Enter Your Email"
-                style={{ backgroundColor: "#F2E3D5" }}
+                style={{ backgroundColor: "#F2E3D5", outline: "none", border:"none", boxShadow:"none"}}
               />
               <button className="button btn text-white  rounded-0">
                 Subscribe
