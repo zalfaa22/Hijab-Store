@@ -3,19 +3,6 @@ import "./css/about.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
 export default function about() {
-//   const observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//         console.log(entry)
-//         if (entry.isIntersecting) {
-//             entry.target.classList.add('show');
-//         } else {
-//             entry.target.classList.remove('show');
-//         }
-//     })
-// })
-
-// const hiddenElements = document.querySelectorAll('.hidden');
-// hiddenElements.forEach((el) => observer.observe(el));
   return (
     <>
       <div className="about-section py-5 w-100 min-vh-100 ">
