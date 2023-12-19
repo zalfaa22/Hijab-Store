@@ -2,17 +2,17 @@ import React, { useEffect, useState, useRef } from "react";
 import "./css/cart.css";
 
 export default function TypeChoice() {
-  const [isActive, setIsActive] = useState(true);
+  const [isActiveType, setisActiveType] = useState(true);
 
   const handleTypeClick = () => {
-    setIsActive(false);
+    setisActiveType(false);
   };
 
   return (
     <>
       <div className="images d-none d-md-block d-lg-block">
         <button
-          className={`buttonphoto ${isActive ? "active" : ""}`}
+          className={`buttonphoto ${isActiveType ? "active" : ""}`}
           onClick={handleTypeClick}
         >
           <img
@@ -25,7 +25,7 @@ export default function TypeChoice() {
           />
         </button>
         <button
-          className={`buttonphoto ${isActive ? "" : ""}`}
+          className={`buttonphoto ${isActiveType ? "" : ""}`}
           onClick={handleTypeClick}
         >
           <img
@@ -38,7 +38,7 @@ export default function TypeChoice() {
           />
         </button>
         <button
-          className={`buttonphoto ${isActive ? "" : ""}`}
+          className={`buttonphoto ${isActiveType ? "" : ""}`}
           onClick={handleTypeClick}
         >
           <img
@@ -51,7 +51,7 @@ export default function TypeChoice() {
           />
         </button>
         <button
-          className={`buttonphoto ${isActive ? "" : ""}`}
+          className={`buttonphoto ${isActiveType ? "" : ""}`}
           onClick={handleTypeClick}
         >
           <img
