@@ -5,7 +5,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 export default function about() {
   return (
     <>
-      <div className="about-section py-5 w-100 min-vh-100 ">
+      <div className="about-section py-5 w-100">
         <h1 className="fs-1 fw-bold text-uppercase">About Us</h1>
         <Container className="mt-5 px-5 px-md-3 px-lg-5">
           <Row>
@@ -33,7 +33,7 @@ export default function about() {
                 </Col>
               </Row>
             </Col>
-            <Col className="kanan col-12 col-md-7 col-lg-6 px-0 ps-md-4 m-0 mt-4 mt-md-0" data-aos="fade-left"  data-aos-duration="2000">
+            <Col className="kanan col-12 col-md-7 col-lg-6 px-0 ps-md-4 m-0 mt-4 mt-md-0" data-aos="fade-up"  data-aos-duration="2000">
               <div className="logo-container d-flex ps-lg-4 justify-content-center justify-content-md-start align-items-center">
                 <img
                   src="./assets/logo.svg"

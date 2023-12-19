@@ -4,7 +4,18 @@ import "./css/footer.css";
 export default function Footer() {
   return (
     <>
-      <div className="gradient clearfix">
+      <div
+        className="text-center fs-1 mb-4 fw-normal pt-5"
+        style={{ color: "#956138", marginTop: "3rem" }}
+      >
+        Support Zada Kheir
+      </div>
+      <div
+        className="gradient clearfix"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="500"
+      >
         <div className="row me-1 me-md-0 me-lg-0 align-items-center">
           <img
             className="col-md-6 col-12 col-lg-4  img-fluid float-start"
@@ -14,43 +25,53 @@ export default function Footer() {
             <h2 className=" fs-3 fw-bold mb-4" style={{ color: "#CF8E5B" }}>
               Subscribe Zada kehir to get News
             </h2>
-            <p className="pe-lg-5 me-lg-5 fs-6 fw-normal pb-2" style={{color: "#5A381C"}}>
+            <p
+              className="pe-lg-5 me-lg-5 fs-6 fw-normal pb-2"
+              style={{ color: "#5A381C" }}
+            >
               Get your can’t-miss style news,before everybody else.Your email.
               right here
             </p>
-            <div className="input-box d-flex  d-lg-none align-items-center px-2 py-2 rounded mb-3 mb-md-0 mb-lg-0" style={{backgroundColor: "#F2E3D5"}}>
-        <input type="text" className="form-control" id="textInput" placeholder="Enter Your Email" style={{backgroundColor: "#F2E3D5"}}/>
-        <button className="button btn text-white  rounded-0">Subscribe</button>
-    </div>
+            <div
+              className="input-box d-flex  d-lg-none align-items-center px-2 py-2 rounded mb-3 mb-md-0 mb-lg-0"
+              style={{ backgroundColor: "#F2E3D5" }}
+            >
+              <input
+                type="text"
+                className="form-control"
+                id="textInput"
+                placeholder="Enter Your Email"
+                style={{ backgroundColor: "#F2E3D5" }}
+              />
+              <button className="button btn text-white  rounded-0">
+                Subscribe
+              </button>
+            </div>
           </div>
           <div className="col-lg-4 mt-5 input-wrap d-none d-md-none d-lg-block text-start">
-    <div className="input-box d-flex align-items-center px-2 py-2 rounded " style={{backgroundColor: "#F2E3D5"}}>
-        <input type="text" className="form-control" id="textInput" placeholder="Enter Your Email" style={{backgroundColor: "#F2E3D5"}}/>
-        <button className="button btn text-white  rounded-0">Subscribe</button>
-    </div>
-</div>
-
-
+            <div
+              className="input-box d-flex align-items-center px-2 py-2 rounded "
+              style={{ backgroundColor: "#F2E3D5" }}
+            >
+              <input
+                type="text"
+                className="form-control"
+                id="textInput"
+                placeholder="Enter Your Email"
+                style={{ backgroundColor: "#F2E3D5", outline: "none", border:"none", boxShadow:"none"}}
+              />
+              <button className="button btn text-white  rounded-0">
+                Subscribe
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
-      
-
-      {/* <div className='gradient clearfix'>
-        <div className='container'>
-        <div className='row d-flex float-start align-items-center'>
-        <img className='col-md-5  img-fluid' src='assets/Footer/hero.svg'></img>
-        <h1 className='col-4'>dhjksfhjk</h1></div></div>
-    </div> */}
-
       <div style={{ backgroundColor: "#F2E3D5" }}>
-        {/* <!-- Footer --> */}
         <footer class=" text-center text-md-start">
-          {/* <!-- Grid container --> */}
           <div class="container p-4">
-            {/* <!--Grid row--> */}
             <div class="row">
-              {/* <!--Grid column--> */}
               <div class=" col-lg-4 col-md-12 mb-lg-4 mb-md-0 text-start">
                 <div className="d-flex mb-5 mt-3">
                   <img className="img-fluid " src="assets/logo.svg"></img>
@@ -82,16 +103,13 @@ export default function Footer() {
                   ></img>
                 </div>
               </div>
-              {/* <!--Grid column--> */}
-
-              {/* <!--Grid column--> */}
               <div
                 class="col-lg-5 col-md-6 mb-4 mb-md-0 mt-lg-4 pt-2 text-start"
                 style={{ color: "#956138" }}
               >
-                <h5 class="text-uppercase fs-6">customer service</h5>
+                <h5 class="text-uppercase fw-semibold fs-6">customer service</h5>
 
-                <ul class="list-unstyled mb-0">
+                <ul class="list-unstyled fw-normal mb-0">
                   <li>
                     <div href="#!" class="mt-lg-5 mt-4 mb-4 pe-5">
                       Layanan pelanggan kami beroperasi setiap hari Senin-Jumat
@@ -110,16 +128,13 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
-              {/* <!--Grid column--> */}
-
-              {/* <!--Grid column--> */}
               <div
                 class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-lg-4 pt-2 text-start"
                 style={{ color: "#956138" }}
               >
-                <h5 class="text-uppercase fs-6 mb-0">quick Links</h5>
+                <h5 class="text-uppercase fs-6 fw-semibold mb-0">quick Links</h5>
 
-                <ul class="list-unstyled">
+                <ul class="list-unstyled fw-normal">
                   <li>
                     <div href="#!" class="mt-lg-5 mt-4 mb-2">
                       Konfirmasi Pembayaran
@@ -152,13 +167,8 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
-              {/* <!--Grid column--> */}
             </div>
-            {/* <!--Grid row--> */}
           </div>
-          {/* <!-- Grid container --> */}
-
-          {/* <!-- Copyright --> */}
           <div class="d-flex gradient text-center p-3 justify-content-between align-items-center">
             <div className="ms-lg-5 ms-md-4 ps-lg-5 text-start me-4 text-black fs-6 fw-normal">
               SINCE 2023
@@ -173,9 +183,7 @@ export default function Footer() {
               TERM, PRIVACY POLICY
             </div>
           </div>
-          {/* <!-- Copyright --> */}
         </footer>
-        {/* <!-- Footer --> */}
       </div>
     </>
   );

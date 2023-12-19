@@ -1,5 +1,4 @@
 import React from "react";
-// import './css/daftar.css'
 export default function Daftar() {
   return (
     <>

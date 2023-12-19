@@ -14,6 +14,7 @@ export default function Header() {
   }, []);
 
   const [isNavOpen, setIsNavOpen] = useState(false);
+
   const handleToggleClick = () => {
     setIsNavOpen(!isNavOpen);
   };
@@ -32,20 +33,20 @@ export default function Header() {
         }}
       >
         <Nav.Item className="my-3">
-          <Nav.Link href="/home">Home</Nav.Link>
+          <Nav.Link href="/home" >Home</Nav.Link>
         </Nav.Item>
         <Nav.Item className="my-3">
           {/* <Link to="../home#about">About Us</Link> */}
           <Nav.Link href="#about">About us</Nav.Link>
         </Nav.Item>
         <Nav.Item className="my-3">
-          <Nav.Link href="#about">New in</Nav.Link>
+          <Nav.Link href="#product">New in</Nav.Link>
         </Nav.Item>
         <Nav.Item className="my-3">
-          <Nav.Link href="#about">All Product</Nav.Link>
+          <Nav.Link href="/home">All Product</Nav.Link>
         </Nav.Item>
         <Nav.Item className="my-3">
-          <Nav.Link href="#about">Categories</Nav.Link>
+          <Nav.Link href="/home">Categories</Nav.Link>
         </Nav.Item>
         <Nav.Item className="my-3">
           <Button href="/" className="button-1 border-0">Login</Button>
@@ -165,18 +166,18 @@ export default function Header() {
 
         <Nav
           variant="tabs"
-          defaultActiveKey="/"
+          defaultActiveKey="/home"
           className="d-none d-lg-flex navbar-2 d-flex position-relative justify-content-center mx-5 mt-3"
         >
           <Nav.Item className="">
-            <Nav.Link href="#hero">Home</Nav.Link>
+            <Nav.Link href="/home">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             {/* <Link to="#about">About us</Link> */}
             <Nav.Link href="#about">About us</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-2">New in</Nav.Link>
+            <Nav.Link href="#product">New in</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="link-3">All Product</Nav.Link>

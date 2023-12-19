@@ -13,8 +13,8 @@ export default function hero() {
           backgroundPosition: "center",
         }}
       >
-        <div className="text-container text-center">
-          <h1 className="fs-1 fw-semibold">
+        <div className="text-container text-center" data-aos="zoom-in" data-aos-duration="2000">
+          <h1 className="fw-semibold">
             Wrap{" "}
             <span className="urself">
               {" "}

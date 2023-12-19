@@ -5,42 +5,33 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Header";
 import Hero from "../components/Hero";
 import About from "../components/About";
-import Testi from "../components/Testi";
 import Carousel from "../components/Carousel";
-import { Row, Col } from "react-bootstrap";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+        <Navbar />
+        <Hero />
       <div
         style={{
           backgroundColor: "#F2E3D5",
-          paddingTop: "3rem",
+          paddingTop: "6rem",
         }}
       >
-      {/* Hero Section/ Start */}
-      <section>
-        <Hero />
-      </section>
+        <section id="product" className="">
+          <CardProduct />
+        </section>
 
-     
-        <CardProduct />
-
-        {/* About us Start */}
         <section id="about" className="">
           <About />
         </section>
 
-        <section style={{ marginBottom: "12rem" }}>
-          <Cart />
-        </section>
+        <Cart />
 
-        <section className="">
+        <section className="mt-5">
           <Carousel />
         </section>
 
-        <section style={{ marginBottom: "12rem" }}></section>
         <Footer />
       </div>
     </>
