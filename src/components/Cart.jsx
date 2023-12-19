@@ -3,6 +3,7 @@ import "./css/cart.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import ColorChoice from "./ColorChoice";
 import TypeChoice from "./TypeChoice";
+import SizeChoice from "./SizeChoice";
 
 export default function Cart() {
   const [qty, setQty] = useState(1);
@@ -80,10 +81,10 @@ export default function Cart() {
                 </div>
               </div>
 
-              <h6 className="pt-5 pb-2" style={{ color: "#774C29" }}>
+              <h6 className="pt-5 fw-bold pb-2" style={{ color: "#774C29" }}>
                 Select Hijab Size
               </h6>
-              <div
+              {/* <div
                 class="row size d-flex"
                 data-aos="fade-up"
                 data-aos-duration="1500"
@@ -103,8 +104,11 @@ export default function Cart() {
                 <div class="col-2 col-size">
                   <img class="img-fluid" src="assets/Cart/size5.svg" />
                 </div>
-              </div>
-              <h6 className="pt-4" style={{ color: "#774C29" }}>
+              </div> */}
+
+              <SizeChoice/>
+
+              <h6 className="pt-5 fw-bold" style={{ color: "#774C29" }}>
                 Select Hijab Size
               </h6>
 
