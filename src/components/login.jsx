@@ -1,4 +1,5 @@
 import React from "react";
+import "./css/login.css"
 
 export default function Login() {
   return (
@@ -10,7 +11,13 @@ export default function Login() {
             type="email"
             for="email"
             placeholder="@gmail.com"
-            className="border-0 bg-transparent"
+            className="border-0 bg-transparent inputt"
+            style={{ 
+              outline: 'none',
+              border: 'none',  // Menambahkan properti ini untuk menghilangkan border
+              '-webkit-box-shadow': 'none',  // Menambahkan properti ini untuk browser WebKit (seperti Chrome dan Safari)
+              '-moz-box-shadow': 'none'      // Menambahkan properti ini untuk browser Mozilla (seperti Firefox)
+            }}
           />
         </div>
 
