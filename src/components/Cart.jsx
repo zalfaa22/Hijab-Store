@@ -6,6 +6,16 @@ import TypeChoice from "./TypeChoice";
 
 export default function Cart() {
   const [qty, setQty] = useState(1);
+  const [clickedIndex, setClickedIndex] = useState(null);
+
+  const handleDivClick = (index) => {
+    setClickedIndex(index === clickedIndex ? null : index);
+  };
+
+  const getDivClasses = (index) =>
+    `col-2 col-size ${index === clickedIndex ? "bg-info" : ""}`;
+
+  const sizes = ["xs", "s", "xl", "l", "xxl"];
 
   return (
     <>
@@ -88,10 +98,35 @@ export default function Cart() {
                 data-aos="fade-up"
                 data-aos-duration="1500"
               >
-                <div class="col-2 col-size">
+                {/* <div class="col-2 col-size ">
+                    <p className="">xs</p>
                   <img class="img-fluid" src="assets/Cart/size1.svg" />
+                </div> */}
+                {sizes.map((size, index) => (
+        <div
+          key={index}
+          className={getDivClasses(index)}
+          onClick={() => handleDivClick(index)}
+        >
+          <p className="">{size}</p>
+        </div>
+      ))}
+                {/* <div className={divClasses} onClick={handleDivClick}>
+                  <p className="">xs</p>
                 </div>
-                <div class="col-2 col-size">
+                <div className={divClasses} onClick={handleDivClick}>
+                  <p className="">xs</p>
+                </div>
+                <div className={divClasses} onClick={handleDivClick}>
+                  <p className="">xs</p>
+                </div>
+                <div className={divClasses} onClick={handleDivClick}>
+                  <p className="">xs</p>
+                </div>
+                <div className={divClasses} onClick={handleDivClick}>
+                  <p className="">xs</p>
+                </div> */}
+                {/* <div class="col-2 col-size">
                   <img class="img-fluid" src="assets/Cart/size2.svg" />
                 </div>
                 <div class="col-2 col-size">
@@ -102,7 +137,7 @@ export default function Cart() {
                 </div>
                 <div class="col-2 col-size">
                   <img class="img-fluid" src="assets/Cart/size5.svg" />
-                </div>
+                </div> */}
               </div>
               <h6 className="pt-4" style={{ color: "#774C29" }}>
                 Select Hijab Size
