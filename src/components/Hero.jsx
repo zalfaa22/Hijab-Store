@@ -14,7 +14,7 @@ export default function hero() {
         }}
       >
         <div className="text-container text-center" data-aos="zoom-in" data-aos-duration="2000">
-          <h1 className="fw-semibold">
+          <h1 className="fw-semibold px-3">
             Wrap{" "}
             <span className="urself">
               {" "}

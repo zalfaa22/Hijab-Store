@@ -38,11 +38,11 @@ border-radius: 0;
 /* SMALL */
 @media (min-width: 319px) {
     .about-section .kanan p {
-        font-size: 10px;
+        font-size: 16px;
     }
-    .about-section .kanan button {
+    /* .about-section .kanan button {
         font-size: 10px;
-    }
+    } */
 }
 
 /* MEDIUM */
@@ -54,17 +54,17 @@ border-radius: 0;
     .about-section .kanan p {
         font-size: 12px;
     }
-    .about-section .kanan button {
+    /* .about-section .kanan button {
         font-size: 12px;
-    }
+    } */
 }
 
 /* LAPTOP */
 @media (min-width: 1024px) {
     .about-section .kanan p {
-        font-size: 15px;
+        font-size: 16px;
     }
-    .about-section .kanan button {
+    /* .about-section .kanan button {
         font-size: 13px;
-    }
+    } */
 }

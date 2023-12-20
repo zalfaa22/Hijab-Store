@@ -57,7 +57,7 @@ export default function about() {
                 Anda. Zada Kheir lebih dari sekedar merek, ini adalah surat
                 cinta kami untuk kalian semua yang berjiwa chic.
               </p>
-              <Button className="d-flex ms-lg-4 justify-content-center mx-auto mx-md-0 justify-content-md-start border-0 p-2 px-lg-5 py-lg-3 mt-4 mt-md-2 mt-lg-3">
+              <Button className="d-flex ms-lg-4 fw-bold justify-content-center mx-auto mx-md-0 justify-content-md-start border-0 py-3 px-5 fs-6  mt-4 mt-md-2 mt-lg-3">
                 Read More
               </Button>
             </Col>
