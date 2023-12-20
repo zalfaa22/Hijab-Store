@@ -32,12 +32,12 @@ export default function ColorChoice() {
   }, [zoomedCard]);
 
   return (
-    <div className="color-cards ">
-      <div className="color-card" id="color1"></div>
-      <div className="color-card" id="color2"></div>
-      <div className="color-card" id="color3"></div>
-      <div className="color-card" id="color4"></div>
-      <div className="color-card" id="color5"></div>
+    <div className="color-cards">
+      <div className="color-card" id="color1" data-aos="fade-right" data-aos-duration="500"></div>
+      <div className="color-card" id="color2" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50"></div>
+      <div className="color-card" id="color3" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100"></div>
+      <div className="color-card" id="color4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="150"></div>
+      <div className="color-card" id="color5" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200"></div>
     </div>
   );
 }
