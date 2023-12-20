@@ -32,7 +32,7 @@ export default function Cart() {
               </div>
             </div>
             <div
-              class="col-lg-5 col-md-12 text-start"
+              class="col-lg-5 col-md-12 text-start content"
               style={{ color: "#774C29" }}
             >
               <h1 className="fs-4 fw-medium text-start pt-5 pt-lg-0">
@@ -42,7 +42,7 @@ export default function Cart() {
                 DRESS FELISIA PURPLE - SERIES B
               </h1>
               <h1 className="fs-5 fw-medium text-start pt-3">Description</h1>
-              <p className="fs-5 fw-medium text-start pt-3 pb-3">
+              <p className="fw-medium text-start pt-3 pb-3 text" style={{color: "#956138"}}>
                 Material: Premium Valerie interlock, bahan nya nyaman, jahitan
                 nya rapi, model nya simple dan elegan.. tetep cantik dan
                 menawan.
