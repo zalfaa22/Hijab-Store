@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .color-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .color-card {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  #color1 { background-image: url('../../../public/assets/Cart/color1.svg'); }
+  #color2 { background-image: url('../../../public/assets/Cart/color2.svg'); }
+  #color3 { background-image: url('../../../public/assets/Cart/color3.svg'); }
+  #color4 { background-image: url('../../../public/assets/Cart/color4.svg'); }
+  #color5 { background-image: url('../../../public/assets/Cart/color5.svg'); }
+
+
+  @media screen and (min-width: 368px) {
+    .color-card {
+        width: 49px;
+        height: 49px;
+    }
+  }
+
+
+  @media screen and (min-width: 425px) {
+    .color-card {
+        width: 58px;
+        height: 58px;
+    }
+  }
+
+
+  @media screen and (min-width: 540px) {
+    .color-card {
+        width: 72px;
+        height: 72px;
+        margin: 0 15px;
+    }
+  }
+
+
+  @media screen and (min-width: 576px) {
+    .color-card {
+        width: 100px;
+        height: 70px;
+        margin: 0 15px;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+    .color-card {
+        width: 100px;
+        height: 65px;
+        margin: 0 19px;
+    }
+  }
+
+
+  @media screen and (min-width: 992px) {
+    .color-card {
+        width: 100px;
+        height: 45px;
+        margin: 0 15px;
+    }
+  }
+
+
+  @media screen and (min-width: 1024px) {
+    .color-card {
+        width: 100px;
+        height: 45px;
+        margin: 0 15px;
+    }
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    .color-card {
+        width: 100px;
+        height: 60px;
+        margin: 0 15px;
+    }
+  }
+
+
+  @media screen and (min-width: 1440px) {
+    .color-card {
+        width: 100px;
+        height: 75px;
+    }
+  }
