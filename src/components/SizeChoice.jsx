@@ -9,8 +9,7 @@ export default function SizeChoice() {
   };
 
   const getDivStyle = (index) => ({
-    border: `1.5px solid ${index === clickedIndex ? "#FFB880" : "#774C29"}`, // Change #000 to the default border color
-    // ... other styles
+    border: `1.5px solid ${index === clickedIndex ? "#FFB880" : "#774C29"}`, 
   });
   
   const getDivClasses = (index) =>
