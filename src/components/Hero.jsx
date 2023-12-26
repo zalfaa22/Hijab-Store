@@ -24,7 +24,9 @@ export default function hero() {
           </h1>
         </div>
         <div className="button-container text-center mt-5">
+          <a href="#cart">
           <Button className="border-0 px-5 py-3 fw-bold">Shop now</Button>
+          </a>
         </div>
 
         <div className="side-love" data-aos="fade-up" data-aos-duration="3000">

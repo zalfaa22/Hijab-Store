@@ -62,6 +62,11 @@ input[type="checkbox"]:checked::before {
     -6px -6px 12px 0px rgba(248, 246, 245, 0.6);
 }
 
+.google button {
+  background: transparent;
+  box-shadow: none;
+}
+
 .badan .akun {
   border: 2px solid var(--netral-20, #808080);
 }

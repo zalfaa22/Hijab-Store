@@ -19,14 +19,16 @@ export default function Home() {
         }}
       >
         <section id="product" className="">
-          <CardProduct />
+          <CardProduct displayAllProducts={false}/>
         </section>
 
         <section id="about" className="">
           <About />
         </section>
 
+        <section id="cart" className="">
         <Cart />
+        </section>
 
         <section className="mt-5">
           <Carousel />

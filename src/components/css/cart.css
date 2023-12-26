@@ -97,10 +97,11 @@
   }
 
   .images .buttonphoto.active img {
-    border: 3px solid black;
+    border: 3px solid #5A381C;
   }
   .images .buttonphoto:focus img {
-    outline: 3.5px solid #5A381C;
+    border: 3.5px solid #5A381C;
+    /* border: none; */
   }
 
 
