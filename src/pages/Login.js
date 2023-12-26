@@ -123,11 +123,7 @@ export default function Login() {
                     alt=""
                     className="me-3"
                   />
-                  <input
-                    type="text"
-                    placeholder="Log in with Google"
-                    className="border-0 bg-transparent"
-                  />
+                  <button className="apple border-0 bg-transparent fw-lighter">Log in with Google Account</button>
                 </div>
 
                 {/* Apple akun */}
@@ -137,11 +133,7 @@ export default function Login() {
                     alt=""
                     className="me-3"
                   />
-                  <input
-                    type="text"
-                    placeholder="Log in with Apple Account"
-                    className="border-0 bg-transparent"
-                  />
+                  <button className="apple border-0 bg-transparent fw-lighter">Log in with Apple Account</button>
                 </div>
               </div>
             </Col>
