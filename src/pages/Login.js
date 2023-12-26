@@ -117,23 +117,23 @@ export default function Login() {
                 </div>
 
                 {/* Google akun */}
-                <div className="google">
-                <button type="submit" className="akun mb-4 border-1 w-100 py-2 rounded-3 text-center" style={{color: "#808080"}}>
+                <div className="akun mb-4 border-1 w-100 py-2 rounded-3">
                   <img
                     src="../assets/login/google.svg"
                     alt=""
                     className="me-3"
-                  />Log in with Google
-                  
-                </button></div>
+                  />
+                  <button className="apple border-0 bg-transparent fw-lighter">Log in with Google Account</button>
+                </div>
 
                 {/* Apple akun */}
-                <div className="akun mb-4 border-1 w-100 py-2 rounded-3 text-center" style={{color: "#808080"}}>
+                <div className="akun mb-4 border-1 w-100 py-2 rounded-3">
                   <img
                     src="../assets/login/apple.svg"
                     alt=""
                     className="me-3"
-                  />Log in with Apple Account
+                  />
+                  <button className="apple border-0 bg-transparent fw-lighter">Log in with Apple Account</button>
                 </div>
               </div>
             </Col>

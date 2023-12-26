@@ -20,6 +20,12 @@
   /* max-height: 100vh; */
 }
 
+.login .apple {
+  border: 0;
+  background: transparent;
+  box-shadow: 0 0 0 0;
+}
+
 /* Hapus gaya default dari checkbox */
 input[type="checkbox"] {
   appearance: none;
