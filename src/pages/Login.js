@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./css/login.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -36,7 +36,7 @@ export default function Login() {
         <Container className="">
           <Row className="">
             <Col className="login col-12 col-lg-6 m-0 mx-md-0">
-              <div className="kepala mb-5">
+              <div className="kepala mb-5 text-center">
                 <img src="../assets/logo.svg" alt="" />
                 <h3>zada khair</h3>
                 <p>Elegance in modesty.</p>
@@ -117,31 +117,23 @@ export default function Login() {
                 </div>
 
                 {/* Google akun */}
-                <div className="akun mb-4 border-1 w-100 py-2 rounded-3">
+                <div className="google">
+                <button type="submit" className="akun mb-4 border-1 w-100 py-2 rounded-3 text-center" style={{color: "#808080"}}>
                   <img
                     src="../assets/login/google.svg"
                     alt=""
                     className="me-3"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Log in with Google"
-                    className="border-0 bg-transparent"
-                  />
-                </div>
+                  />Log in with Google
+                  
+                </button></div>
 
                 {/* Apple akun */}
-                <div className="akun mb-4 border-1 w-100 py-2 rounded-3">
+                <div className="akun mb-4 border-1 w-100 py-2 rounded-3 text-center" style={{color: "#808080"}}>
                   <img
                     src="../assets/login/apple.svg"
                     alt=""
                     className="me-3"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Log in with Apple Account"
-                    className="border-0 bg-transparent"
-                  />
+                  />Log in with Apple Account
                 </div>
               </div>
             </Col>

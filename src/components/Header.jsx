@@ -14,10 +14,20 @@ export default function Header() {
   }, []);
 
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [showCategoryDropdown, setShowCategoryDropdown] = useState(false);
 
   const handleToggleClick = () => {
     setIsNavOpen(!isNavOpen);
   };
+
+  const handleCategoryMouseEnter = () => {
+    setShowCategoryDropdown(true);
+  };
+
+  const handleCategoryMouseLeave = () => {
+    setShowCategoryDropdown(false);
+  };
+
   const navItems = (
     <>
       <div
@@ -43,7 +53,7 @@ export default function Header() {
           <Nav.Link href="#product">New in</Nav.Link>
         </Nav.Item>
         <Nav.Item className="my-3">
-          <Nav.Link href="/home">All Product</Nav.Link>
+          <Nav.Link href="/product">All Product</Nav.Link>
         </Nav.Item>
         <Nav.Item className="my-3">
           <Nav.Link href="/home">Categories</Nav.Link>
@@ -104,11 +114,11 @@ export default function Header() {
             className="logo ms-lg-5 ms-0 d-none d-md-flex align-items-center"
           >
             <img
-              src="./assets/logo.svg"
+              src="../assets/logo.svg"
               alt=""
               className="d-flex w-100 h-100 me-lg-3"
             />
-            <span className="fs-3 fw-bold">zada kheir</span>
+            <span className="fs-3 fw-semibold" style={{color: "#774C29"}}>zada kheir</span>
           </Navbar.Brand>
 
           <div className="d-flex align-items-center">
@@ -180,10 +190,22 @@ export default function Header() {
             <Nav.Link href="#product">New in</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-3">All Product</Nav.Link>
+            <Nav.Link href="/product" >All Product</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-4">Categories</Nav.Link>
+            <Nav.Link eventKey="link-4" onMouseEnter={handleCategoryMouseEnter}
+        onMouseLeave={handleCategoryMouseLeave}>Categories</Nav.Link>
+        {/* Category Dropdown */}
+        {/* <Dropdown
+          show={showCategoryDropdown}
+          onMouseEnter={handleCategoryMouseEnter}
+          onMouseLeave={handleCategoryMouseLeave}
+        >
+          <Dropdown.Menu>
+            <Dropdown.Item href="/product">Category 1</Dropdown.Item>
+            <Dropdown.Item href="#category2">Category 2</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown> */}
           </Nav.Item>
         </Nav>
       </div>

@@ -6,7 +6,7 @@ export default function about() {
   return (
     <>
       <div className="about-section py-5 w-100">
-        <h1 className="fs-1 fw-bold text-uppercase">About Us</h1>
+        <h1 className="fs-1 fw-semibold text-uppercase text-center">About Us</h1>
         <Container className="mt-5 px-5 px-md-3 px-lg-5">
           <Row>
             <Col className="col-12 col-md-5 col-lg-6 px-0 m-0" data-aos="zoom-in"  data-aos-duration="2000">

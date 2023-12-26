@@ -1,0 +1,70 @@
+.cartdetail {
+    background-image: linear-gradient(to left, #E2C7B3, #FBEFE1, #E2C7B3);
+    padding-top: 48px;
+    padding-bottom: 48px;
+    /* margin-top: 48px; */
+    /* //// */
+    
+}
+
+.image-container {
+    max-height: 770px; /* Set the maximum height for the scrollable container */
+    overflow-y: auto; /* Add vertical scroll if necessary */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: transparent transparent; /* Firefox */
+  }
+  
+  /* Hide scrollbar for other browsers */
+  .image-container::-webkit-scrollbar {
+    width: 5px; /* Set the width of the scrollbar */
+  }
+  
+  .image-container::-webkit-scrollbar-thumb {
+    background-color: rgb(143, 64, 64); /* Set the color of the scrollbar thumb */
+  }
+
+  .cartdetail .images {
+    max-height: 770px; /* Set the maximum height for the container */
+    overflow-y: auto; /* Add vertical scroll if necessary */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: transparent transparent; /* Firefox */
+}
+.images::-webkit-scrollbar {
+    width: 0px; /* Set the width of the scrollbar */
+  }
+  
+  .images::-webkit-scrollbar-thumb {
+    background-color: rgb(143, 64, 64); /* Set the color of the scrollbar thumb */
+  }
+
+  @media (max-width: 767px) {
+    .image-container {
+      overflow-x: auto; /* Add horizontal scroll on small screens */
+      overflow-y: hidden; /* Hide vertical scroll on small screens */
+      white-space: nowrap; /* Prevent text from wrapping */
+    }
+    .image-container::-webkit-scrollbar-thumb {
+        background-color: transparent; /* Set the color of the scrollbar thumb */
+      }
+    .indicators {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+      }
+      
+      .indicators span {
+        width: 10px;
+        height: 10px;
+        background-color: #ddd;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+      .indicators span.active {
+        background-color: #555;
+      }
+  }
+  

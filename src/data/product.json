@@ -1,30 +1,224 @@
 [
     {
         "id": 1,
-        "image": "assets/CardProduct/image.png",
-        "category": "Produk Terbaru",
+        "image": "../assets/CardProduct/imagecard.png",
+        "photo": ["../assets/Cart/image2.png", "../assets/Cart/image2.png", "../assets/Cart/image2.png", "../assets/Cart/image2.png"],
+        "category": "produk terbaru",
         "name": "Bainar Multicolour Dress",
-        "price": "Rp 195.000"
+        "color": "hazelnut",
+        "price": 195000,
+        "displayprice": "Rp 195.000"
     },
     {
         "id": 2,
-        "image": "assets/CardProduct/image.png",
+        "image": "../assets/CardProduct/imagecard.png",
+        "photo": ["../assets/Cart/image2.png", "../assets/Cart/image2.png", "../assets/Cart/image2.png", "../assets/Cart/image2.png"],
         "category": "produk terbaru",
         "name": "Bainar Multicolour Dress",
-        "price": "Rp 195.000"
+        "color": "hazelnut",
+        "price": 195000,
+        "displayprice": "Rp 195.000"
     },
     {
         "id": 3,
-        "image": "assets/CardProduct/image.png",
+        "image": "../assets/CardProduct/imagecard.png",
+        "photo": ["../assets/Cart/image2.png", "../assets/Cart/image2.png", "../assets/Cart/image2.png", "../assets/Cart/image2.png"],
         "category": "produk terbaru",
         "name": "Bainar Multicolour Dress",
-        "price": "Rp 195.000"
+        "color": "hazelnut",
+        "price": 195000,
+        "displayprice": "Rp 195.000"
     },
     {
         "id": 4,
-        "image": "assets/CardProduct/image.png",
+        "image": "../assets/CardProduct/imagecard.png",
+        "photo": ["../assets/Cart/image2.png", "../assets/Cart/image2.png", "../assets/Cart/image2.png", "../assets/Cart/image2.png"],
         "category": "produk terbaru",
         "name": "Bainar Multicolour Dress",
-        "price": "Rp 195.000"
+        "color": "hazelnut",
+        "price": 195000,
+        "displayprice": "Rp 195.000"
+    },
+
+
+
+    {
+        "id": 5,
+        "image": "../assets/Product/scarf/davena/0.jpg",
+        "photo": ["../assets/Product/scarf/davena/1.webp", "../assets/Product/scarf/davena/2.webp", "../assets/Product/scarf/davena/3.webp", "../assets/Product/scarf/davena/4.webp", "../assets/Product/scarf/davena/5.webp", "../assets/Product/scarf/davena/6.webp"],
+        "category": "scarf",
+        "name": "Davena Scarf",
+        "color": ["silver grey", "white jade", "misty green"],
+        "price": 85000,
+        "displayprice": "Rp 85.000"
+    },
+    {
+        "id": 6,
+        "image": "../assets/Product/scarf/esma/0.jpg",
+        "photo": ["../assets/Product/scarf/esma/1.webp", "../assets/Product/scarf/esma/2.webp", "../assets/Product/scarf/esma/3.webp", "../assets/Product/scarf/esma/4.webp", "../assets/Product/scarf/esma/5.webp", "../assets/Product/scarf/esma/6.webp"],
+        "category": "scarf",
+        "name": "Esma Scarf",
+        "color": ["plum", "sky blue", "yellow"],
+        "price": 93000,
+        "displayprice": "Rp 93.000"
+    },
+    {
+        "id": 7,
+        "image": "../assets/Product/scarf/eyra/0.jpg",
+        "photo": ["../assets/Product/scarf/eyra/1.webp", "../assets/Product/scarf/eyra/2.webp", "../assets/Product/scarf/eyra/3.webp", "../assets/Product/scarf/eyra/4.webp", "../assets/Product/scarf/eyra/5.webp", "../assets/Product/scarf/eyra/6.webp"],
+        "category": "scarf",
+        "name": "Eyra Scarf",
+        "color": ["franch rose", "blue lagoon", "moss green"],
+        "price": "95000",
+        "displayprice": "Rp 95.000"
+    },
+    {
+        "id": 8,
+        "image": "../assets/Product/scarf/kalila/0.jpg",
+        "photo": ["../assets/Product/scarf/kalila/1.webp", "../assets/Product/scarf/kalila/2.webp", "../assets/Product/scarf/kalila/3.webp", "../assets/Product/scarf/kalila/4.webp", "../assets/Product/scarf/kalila/5.webp", "../assets/Product/scarf/kalila/6.webp"],
+        "category": "scarf",
+        "name": "Kalila Scarf",
+        "color": "red",
+        "price": 72000,
+        "displayprice": "Rp 72.000"
+    },
+    {
+        "id": 9,
+        "image": "../assets/Product/scarf/villandry/0.jpg",
+        "photo": ["../assets/Product/scarf/villandry/1.webp", "../assets/Product/scarf/villandry/2.webp", "../assets/Product/scarf/villandry/3.webp", "../assets/Product/scarf/villandry/4.webp", "../assets/Product/scarf/villandry/5.webp"],
+        "category": "scarf",
+        "name": "Villandry Scarf",
+        "color": "red",
+        "price": 69000,
+        "displayprice": "Rp 69.000"
+    },
+    {
+        "id": 10,
+        "image": "../assets/Product/scarf/zale/0.jpg",
+        "photo": ["../assets/Product/scarf/zale/1.webp", "../assets/Product/scarf/zale/2.webp", "../assets/Product/scarf/zale/3.webp", "../assets/Product/scarf/zale/4.webp"],
+        "category": "scarf",
+        "name": "Zale Scarf",
+        "color": "red",
+        "price": 65000,
+        "displayprice": "Rp 65.000"
+    },
+
+
+
+    {
+        "id": 11,
+        "image": "../assets/Product/tops/alera/0.jpg",
+        "photo": ["../assets/Product/tops/alera/1.webp", "../assets/Product/tops/alera/2.webp", "../assets/Product/tops/alera/3.webp", "../assets/Product/tops/alera/4.webp"],
+        "category": "tops",
+        "name": "Alera Shirt",
+        "color": "red",
+        "price": 192000,
+        "displayprice": "Rp 192.000"
+    },
+    {
+        "id": 12,
+        "image": "../assets/Product/tops/anemone/0.jpg",
+        "photo": ["../assets/Product/tops/anemone/1.webp", "../assets/Product/tops/anemone/2.webp", "../assets/Product/tops/anemone/3.webp", "../assets/Product/tops/anemone/4.webp"],
+        "category": "tops",
+        "name": "Anemone Shirt",
+        "color": "red",
+        "price": 183000,
+        "displayprice": "Rp 183.000"
+    },
+    {
+        "id": 13,
+        "image": "../assets/Product/tops/anila/0.jpg",
+        "photo": ["../assets/Product/tops/anila/1.webp", "../assets/Product/tops/anila/2.webp", "../assets/Product/tops/anila/3.webp", "../assets/Product/tops/anila/4.webp", "../assets/Product/tops/anila/5.webp", "../assets/Product/tops/anila/6.webp"],
+        "category": "tops",
+        "name": "Anila Shirt",
+        "color": "red",
+        "price": 209000,
+        "displayprice": "Rp 209.000"
+    },
+    {
+        "id": 14,
+        "image": "../assets/Product/tops/blaze/0.jpg",
+        "photo": ["../assets/Product/tops/blaze/1.webp", "../assets/Product/tops/blaze/2.webp", "../assets/Product/tops/blaze/3.webp", "../assets/Product/tops/blaze/4.webp"],
+        "category": "tops",
+        "name": "Blaze Shirt",
+        "color": "red",
+        "price": 230000,
+        "displayprice": "Rp 230.000"
+    },
+
+
+
+    {
+        "id": 15,
+        "image": "../assets/Product/dress/ashana/0.jpg",
+        "photo": ["../assets/Product/dress/ashana/1.webp", "../assets/Product/dress/ashana/2.webp", "../assets/Product/dress/ashana/3.webp", "../assets/Product/dress/ashana/4.webp"],
+        "category": "dress",
+        "name": "Ashana Dress",
+        "color": "red",
+        "price": 210000,
+        "displayprice": "Rp 210.000"
+    },
+    {
+        "id": 16,
+        "image": "../assets/Product/dress/kamaniya/0.jpg",
+        "photo": ["../assets/Product/dress/kamaniya/1.webp", "../assets/Product/dress/kamaniya/2.webp", "../assets/Product/dress/kamaniya/3.webp", "../assets/Product/dress/kamaniya/4.webp"],
+        "category": "dress",
+        "name": "Kamaniya Dress",
+        "color": "red",
+        "price": 200000,
+        "displayprice": "Rp 200.000"
+    },
+    {
+        "id": 17,
+        "image": "../assets/Product/dress/nezaya/0.jpg",
+        "photo": ["../assets/Product/dress/nezaya/1.webp", "../assets/Product/dress/nezaya/2.webp", "../assets/Product/dress/nezaya/3.webp", "../assets/Product/dress/nezaya/4.webp"],
+        "category": "dress",
+        "name": "Nezaya Dress",
+        "color": "red",
+        "price": 245000,
+        "displayprice": "Rp 245.000"
+    },
+    {
+        "id": 18,
+        "image": "../assets/Product/dress/salaju/0.jpg",
+        "photo": ["../assets/Product/dress/salaju/1.webp", "../assets/Product/dress/salaju/2.webp", "../assets/Product/dress/salaju/3.webp", "../assets/Product/dress/salaju/4.webp"],
+        "category": "dress",
+        "name": "Salaju Dress",
+        "color": "red",
+        "price": 250000,
+        "displayprice": "Rp 250.000"
+    },
+
+
+
+    {
+        "id": 19,
+        "image": "../assets/Product/outer/azara/0.jpg",
+        "photo": ["../assets/Product/outer/azara/1.webp", "../assets/Product/outer/azara/2.webp", "../assets/Product/outer/azara/3.webp", "../assets/Product/outer/azara/4.webp"],
+        "category": "outerwear",
+        "name": "Azara Outer",
+        "color": "red",
+        "price": 190000,
+        "displayprice": "Rp 190.000"
+    },
+    {
+        "id": 20,
+        "image": "../assets/Product/outer/ghea/0.jpg",
+        "photo": ["../assets/Product/outer/ghea/1.webp", "../assets/Product/outer/ghea/2.webp", "../assets/Product/outer/ghea/3.webp", "../assets/Product/outer/ghea/4.webp"],
+        "category": "outerwear",
+        "name": "Ghea Outer",
+        "color": ["red", "yellow"],
+        "price": 195000,
+        "displayprice": "Rp 195.000"
+    },
+    {
+        "id": 21,
+        "image": "../assets/Product/outer/hali/0.jpg",
+        "photo": ["../assets/Product/outer/hali/1.webp", "../assets/Product/outer/hali/2.webp", "../assets/Product/outer/hali/3.webp", "../assets/Product/outer/hali/4.webp"],
+        "category": "outerwear",
+        "name": "Hali Outer",
+        "color": "red",
+        "price": 130000,
+        "displayprice": "Rp 130.000"
     }
 ]
