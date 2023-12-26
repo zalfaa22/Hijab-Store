@@ -1,14 +1,15 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Daftar from "./pages/SignUp";
+import Login from './pages/Login'
+import Daftar from './pages/SignUp'
+import Product from "./pages/Product";
+import CartPage from "./pages/CartPage";
 import { useNavigate } from "react-router-dom";
 import {jwtDecode} from "jwt-decode";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 AOS.init();
 
 function App() {
@@ -42,9 +43,11 @@ function App() {
       <div id="signInDiv">
       </div>
       <Routes>
-        <Route path="/home" Component={Home} />
-        <Route path="/" Component={Login} />
-        <Route path="/daftar" Component={Daftar} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/daftar" element={<Daftar />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/cart/:id" element={<CartPage />} />
       </Routes>
     </div>
   );

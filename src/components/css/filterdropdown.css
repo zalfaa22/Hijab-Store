@@ -1,0 +1,19 @@
+.dropdown {
+    background-color: transparent;
+    border: none;
+    margin-right: 2rem;
+}
+
+.color-dropdown {
+    position: relative;
+  }
+  
+  .color-circle {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  

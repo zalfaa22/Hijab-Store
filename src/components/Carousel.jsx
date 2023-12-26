@@ -45,7 +45,7 @@ const TestimonialCarousel = () => {
 
   return (
     <div className="testi w-100 min-vh-100 pt-5">
-      <h1 className="px-4 title text-uppercase fw-bold fs-1">
+      <h1 className="px-4 title text-uppercase text-center fw-semibold fs-1">
         LET CUSTOMER SPEAK FOR US
       </h1>
       <Carousel
@@ -72,7 +72,7 @@ const TestimonialCarousel = () => {
           </Carousel.Item>
         ))}
       </Carousel>
-      <div className="pt-5">
+      <div className="pt-5 text-center">
         <div
           className="btn px-2 rounded-5"
           style={{ backgroundColor: "#FFCDA6" }}

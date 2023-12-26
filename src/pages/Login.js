@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./css/login.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -36,7 +36,7 @@ export default function Login() {
         <Container className="">
           <Row className="">
             <Col className="login col-12 col-lg-6 m-0 mx-md-0">
-              <div className="kepala mb-5">
+              <div className="kepala mb-5 text-center">
                 <img src="../assets/logo.svg" alt="" />
                 <h3>zada khair</h3>
                 <p>Elegance in modesty.</p>

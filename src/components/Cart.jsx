@@ -10,7 +10,7 @@ export default function Cart() {
 
   return (
     <>
-      <div className="tittle fs-1 fw-semibold mt-5 lh-sm">
+      <div className="tittle fs-1 fw-semibold text-center mt-5 lh-sm">
         We Offer You <br /> The Best Seller
       </div>
       <div class="cart">
@@ -153,7 +153,7 @@ export default function Cart() {
           </div>
         </div>
       </div>
-      <div className="pt-5">
+      {/* <div className="pt-5 text-center">
         <div
           className="btn px-2 rounded-5"
           style={{ backgroundColor: "#FFCDA6" }}
@@ -175,7 +175,7 @@ export default function Cart() {
             <i class="bi bi-arrow bi-arrow-right"></i>
           </button>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
