@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Nav, Navbar, Button, Dropdown } from "react-bootstrap";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import "./css/header.css";
 import About from "./About";
 import { Link } from "react-router-dom";
+import { auth, signOut } from "../pages/Config";
+import { useNavigate } from "react-router-dom"; 
 
 export default function Header() {
   const [activePage, setActivePage] = useState('/home');
+  const [user, setUser] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      setUser(user);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+      navigate("/");
+    } catch (error) {
+      console.error("Error signing out:", error);
+    }
+  };
 
   useEffect(() => {
     const path = window.location.pathname;
@@ -26,6 +49,43 @@ export default function Header() {
 
   const handleCategoryMouseLeave = () => {
     setShowCategoryDropdown(false);
+  };
+
+  const renderAuthButtons = () => {
+    console.log("User:", user);
+  
+    if (user) {
+      console.log("User is logged in");
+      const displayName = user.displayName || user.email;
+      return (
+        <div className="d-flex align-items-center">
+          {user.photoURL && (
+            <img
+              src={user.photoURL}
+              alt="Profile"
+              className="rounded-circle me-2"
+              style={{ width: "30px", height: "30px" }}
+            />
+          )}
+          <span className="me-2">{displayName}</span>
+          <Button onClick={handleLogout} className="button-1 border-0 me-3">
+            Logout
+          </Button>
+        </div>
+      );
+    } else {
+      console.log("User is not logged in");
+      return (
+        <>
+          <Button href="/" className="button-1 border-0 me-3">
+            Login
+          </Button>
+          <Button href="/daftar" className="button-2 bg-transparent rounded-0">
+            Sign up
+          </Button>
+        </>
+      );
+    }
   };
 
   const navItems = (
@@ -58,11 +118,8 @@ export default function Header() {
         <Nav.Item className="my-3">
           <Nav.Link href="/home">Categories</Nav.Link>
         </Nav.Item>
-        <Nav.Item className="my-3">
-          <Button href="/" className="button-1 border-0">Login</Button>
-        </Nav.Item>
-        <Nav.Item className="my-3">
-          <Button href="/daftar" className="button-2 bg-transparent rounded-0">Sign up</Button>
+        <Nav.Item className="my-3" >
+        {renderAuthButtons()}
         </Nav.Item>
       </div>
     </>
@@ -131,10 +188,16 @@ export default function Header() {
               </div>
             </Nav.Item>
             <div className="d-none d-lg-flex">
-              <Button href="/" className="button-1 border-0 me-3">Login</Button>
+              {renderAuthButtons()}
+              {/* <Button href="/" className="button-1 border-0 me-3">Login</Button>
               <Button href="/daftar" className="button-2 bg-transparent rounded-0 ">
                 Sign up
               </Button>
+              {user && (
+        <button onClick={handleLogout}>
+          Logout
+        </button>
+      )} */}
             </div>
             <div
               className={`navbar-toggle ms-lg-4 d-none d-md-flex d-lg-none ${isNavOpen ? "open" : ""}`}
