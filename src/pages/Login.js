@@ -1,34 +1,70 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./css/login.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { auth, googleAuthProvider, signInWithEmailAndPassword } from "./Config";
+import { signInWithPopup } from "firebase/auth";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [user, setUser] = useState(null);
   const navigate = useNavigate();
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
+  // Jika user belum logout akan langsung di arahkan ke home
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      setUser(user);
+      if (user) {
+        navigate("/home");
+      }
+    });
 
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-  };
+    return () => unsubscribe();
+  }, [navigate]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
-
-    if (email.trim() === '' || password.trim() === '') {
-      alert('Email dan password tidak boleh kosong');
-    } else if (!email.includes('@')) {
-      alert('Email harus mengandung karakter "@"');
-    } else {
-      console.log('Email yang valid:', email);
-      console.log('Password yang valid:', password);
-      navigate('/Home');
+  // Menampilkan PopUp login with google
+  const handleSignInWithGoogle = async () => {
+    try {
+      const result = await signInWithPopup(auth, googleAuthProvider);
+      console.log(result);
+      localStorage.setItem("token", result.user.acsessToken);
+      localStorage.setItem("user", JSON.stringify(result.user));
+      navigate("/home");
+    } catch (error) {
+      console.error(error);
     }
   };
+
+  // Handle submit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      console.log(userCredential);
+      const user = userCredential.user;
+      localStorage.setItem("token", user.accessToken);
+      localStorage.setItem("user", JSON.stringify(user));
+      navigate("/home");
+    } catch (error) {
+      console.error(error);
+      alert("Login failed. Please check your email and password.");
+    }
+  };
+
+  // if (email.trim() === '' || password.trim() === '') {
+  //   alert('Email dan password tidak boleh kosong');
+  // } else if (!email.includes('@')) {
+  //   alert('Email harus mengandung karakter "@"');
+  // } else {
+  //   console.log('Email yang valid:', email);
+  //   console.log('Password yang valid:', password);
+  //   navigate('/Home');
+  // }
 
   return (
     <>
@@ -59,7 +95,7 @@ export default function Login() {
                       boxShadow: "none",
                     }}
                     value={email}
-                    onChange={handleEmailChange}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
 
@@ -73,7 +109,7 @@ export default function Login() {
                     />
                     <input
                       type="password"
-                      placeholder="input your name"
+                      placeholder="input your password"
                       className="border-0 bg-transparent"
                       style={{
                         outline: "none",
@@ -81,7 +117,7 @@ export default function Login() {
                         boxShadow: "none",
                       }}
                       value={password}
-                      onChange={handlePasswordChange}
+                      onChange={(e) => setPassword(e.target.value)}
                     />
                   </div>
                   <img src="../assets/login/eye.svg" alt="" className="eye" />
@@ -117,23 +153,35 @@ export default function Login() {
                 </div>
 
                 {/* Google akun */}
-                <div className="akun mb-4 border-1 w-100 py-2 rounded-3">
+                <div
+                  className="akun mb-4 border-1 w-100 py-2 rounded-3 text-center"
+                  onClick={handleSignInWithGoogle}
+                >
                   <img
                     src="../assets/login/google.svg"
                     alt=""
                     className="me-3"
                   />
-                  <button className="apple border-0 bg-transparent fw-lighter">Log in with Google Account</button>
+                  <button className="apple border-0 bg-transparent fw-lighter">
+                    Log in with Google Account
+                  </button>
                 </div>
 
                 {/* Apple akun */}
-                <div className="akun mb-4 border-1 w-100 py-2 rounded-3">
+                <div className="akun mb-4 border-1 w-100 py-2 rounded-3 text-center">
                   <img
                     src="../assets/login/apple.svg"
                     alt=""
                     className="me-3"
                   />
-                  <button className="apple border-0 bg-transparent fw-lighter">Log in with Apple Account</button>
+                  <button className="apple border-0 bg-transparent fw-lighter">
+                    Log in with Apple Account
+                  </button>
+                </div>
+                {/* Go to SignUp */}
+
+                <div className="text-center mb-4" style={{ fontSize: "13px" }}>
+                  Don't have an account yet? <a href="/Daftar">SignUp now</a>
                 </div>
               </div>
             </Col>

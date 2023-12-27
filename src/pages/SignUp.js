@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./css/login.css";
 import { Container, Row, Col } from "react-bootstrap";
+import { auth, googleAuthProvider } from "./Config";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { signInWithPopup } from "firebase/auth";
 
 export default function Daftar() {
   const [name, setName] = useState("");
@@ -9,29 +12,35 @@ export default function Daftar() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
+  // Handle submit
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (name.trim() === "" || email.trim() === "" || password.trim() === "") {
-      alert("Nama, Email, dan Password tidak boleh kosong");
-    } else if (!email.includes("@")) {
-      alert('Email harus mengandung karakter "@"');
-    } else {
-      console.log("Email yang valid:", email);
-      console.log("Password yang valid:", password);
+    try {
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      console.log(userCredential);
+      const user = userCredential.user;
+      localStorage.setItem("token", user.accessToken);
+      localStorage.setItem("user", JSON.stringify(user));
       navigate("/home");
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  // Menampilkan PopUp login with google
+  const handleSignInWithGoogle = async () => {
+    try {
+      const result = await signInWithPopup(auth, googleAuthProvider);
+      console.log(result);
+      localStorage.setItem("token", result.user.acsessToken);
+      localStorage.setItem("user", JSON.stringify(result.user));
+      navigate("/home");
+    } catch (error) {
+      console.error(error);
     }
   };
 
@@ -40,14 +49,17 @@ export default function Daftar() {
       <header className="login-page masuk w-100 min-vh-100 d-flex align-items-center pt-5">
         <Container>
           <Row className="">
-            <Col className="login col-12 col-lg-6 m-0 mx-md-0">
+            <Col className="login col-12 col-lg-6 m-0 mx-md-0 text-center">
               <div className="kepala mb-5">
                 <img src="../assets/logo.svg" alt="" />
                 <h3>zada khair</h3>
                 <p>Elegance in modesty.</p>
               </div>
               {/* <Daftar /> */}
-              <div className="badan px-0 px-md-5 px-lg-0">
+              <div
+                className="badan px-0 px-md-5 px-lg-0"
+                onSubmit={handleSubmit}
+              >
                 {/* Name */}
                 <div className="email mb-4 px-4 py-2 d-flex justify-content-start border-1 w-100 border-0 rounded-3">
                   <img
@@ -65,7 +77,7 @@ export default function Daftar() {
                       boxShadow: "none",
                     }}
                     value={name}
-                    onChange={handleNameChange}
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
 
@@ -86,7 +98,7 @@ export default function Daftar() {
                       boxShadow: "none",
                     }}
                     value={email}
-                    onChange={handleEmailChange}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
 
@@ -108,7 +120,7 @@ export default function Daftar() {
                         boxShadow: "none",
                       }}
                       value={password}
-                      onChange={handlePasswordChange}
+                      onChange={(e) => setPassword(e.target.value)}
                     />
                   </div>
                   <img src="../assets/login/eye.svg" alt="" className="eye" />
@@ -142,17 +154,18 @@ export default function Daftar() {
                 </div>
 
                 {/* Google akun */}
-                <div className="akun mb-4 border-1 w-100 py-2 rounded-3">
+                <div
+                  className="akun mb-4 border-1 w-100 py-2 rounded-3 text-center"
+                  onClick={handleSignInWithGoogle}
+                >
                   <img
                     src="../assets/login/google.svg"
                     alt=""
                     className="me-3"
                   />
-                  <input
-                    type="text"
-                    placeholder="Log in with Google"
-                    className="border-0 bg-transparent"
-                  />
+                  <button className="apple border-0 bg-transparent fw-lighter">
+                    Log in with Google Account
+                  </button>
                 </div>
 
                 {/* Apple akun */}
